@@ -1,0 +1,200 @@
+/* Base styles (Mobile-first approach) */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header section */
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stack vertically by default */
+    padding: 0;
+    margin: 0;
+}
+
+.header nav ul li {
+    margin: 10px 0;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+}
+
+/* Intro section */
+.intro-section {
+    margin: 0;
+    background-image: url(image/fin.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.intro-section h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.intro-section p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Grid section */
+.grid-section {
+    text-align: center;
+    background-color: rgb(244, 246, 248);
+    padding: 20px 10px;
+}
+
+.grid-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack cards on top of each other */
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 9px;
+    background-color: #fff;
+    margin: 10px 0;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+/* Contact section */
+.contact-section h3 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+form {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    height: 30px;
+}
+
+
+button {
+    background-color: black;
+    color: #eeeff1;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header nav ul {
+        flex-direction: row; /* Align horizontally for larger screens */
+        justify-content: center;
+    }
+
+    .header nav ul li {
+        margin: 0 10px;
+    }
+
+    .intro-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-section p {
+        font-size: 1.2rem;
+    }
+
+    .grid {
+        flex-direction: row; /* Align cards side by side */
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(33.333% - 20px); /* Three cards per row */
+        margin: 10px;
+    }
+
+    form {
+        max-width: 500px;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .card {
+        width: calc(25% - 20px); /* Four cards per row */
+    }
+
+    .intro-section h1 {
+        font-size: 3rem;
+    }
+
+    form {
+        max-width: 600px;
+    }
+}

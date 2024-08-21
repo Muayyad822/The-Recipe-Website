@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <h1>My Recipe Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="intro-section">
+        <h1>Welcome to My Recipe Collection</h1>
+        <p>
+          Explore delicious recipes that are easy to make and delightful to eat.
+        </p>
+      </section>
+      <section class="grid-section" id="recipes">
+        
+          <h3>Featured Recipes</h3>
+        <div class="grid">
+            <div class="card">
+                <img src="image/spagetti.jpg" alt="spagetti"/>
+                <h2>Spaghetti Bolognese</h2>
+                <p>A classic Italian pasta dish with a rich and savory sauce.</p>
+            </div>
+            <div class="card">
+                <img src="image/chickencurry.jpg" alt="chickencurry"/>
+                <h2>Chicken Curry</h2>
+                <p>A flavorful curry made with tender chicken and aromatic spices.</p>
+            </div>
+            <div class="card">
+                <img src="image/chocolatecake.jpg" alt="chocolatecake"/>
+                <h2>Chocolate Cake</h2>
+                <p>A decadent dessert that's moist, rich, and topped with chocolate ganache.</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <h3>Contact Me</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name"> 
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <label for="message">Message:</label>
+                <textarea type="text" id="message"> </textarea>
+                <button> Send Message</button>
+            </form>
+      </section>
+    </main>
+    <footer class="footer">
+        <p>2024 &copy My Recipe Website</p>
+    </footer>
+  </body>
+</html>
